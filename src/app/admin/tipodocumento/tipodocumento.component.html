@@ -1,0 +1,35 @@
+
+<div class="panel panel-info">
+    
+    <div class="panel-heading">
+        Listado de tipo de documentos
+        <div class="pull-right">
+            <a (click)="nuevo()" class="btn btn-xs btn-primary"> 
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                Nuevo
+            </a>
+        </div>
+    </div>
+    
+    <div class="panel-body">
+       <div class="row">
+           <div class="col-lg-12">
+               <tipodocumento-table [cambio]="c_cambio_table" (close)="event_table_tipo_documento($event)"></tipodocumento-table>
+           </div>
+       </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-tipo-documento">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Formulario de tipo de documentos</h4>
+            </div>
+            <tipodocumento-form [accion]="c_accion_form" [idIn]="c_id_table" (close)="event_form_tipo_documento($event)"></tipodocumento-form>
+        </div>
+    </div>
+</div>
+

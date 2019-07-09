@@ -1,0 +1,29 @@
+<div class="modal-body">
+        <form (ngSubmit)="submitForm()" >
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="codigo">Codigo</label>
+                        <input type="text"  class="form-control" [(ngModel)]="formData.nombre" id="codigo" #codigo="ngModel"  required codigo="codigo" placeholder="Codigo">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="form-group">
+                        <label for="codigo">Nombre</label>
+                        <input type="text" class="form-control" [(ngModel)]="formData.nombre" id="nombre" #nombre="ngModel" required codigo="nombre" placeholder="Nombre del tipo de documento">
+                    </div>
+                </div>
+            </div>
+        </form>  
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-default pull-left" (click)="cerrar()"> Cancelar</a>
+        <a class="btn btn-success pull-right" *ngIf="c_accion == 1" >
+            <span class="glyphicon glyphicon-save" aria-hidden="true"></span> 
+            Guardar
+        </a>
+        <a class="btn btn-primary pull-right" *ngIf="c_accion == 2">
+            <span class="glyphicon glyphicon-save"  aria-hidden="true"></span>
+            Guardar
+        </a>
+    </div>

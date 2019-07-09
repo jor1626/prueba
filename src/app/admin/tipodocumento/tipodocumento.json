@@ -1,0 +1,19 @@
+
+[
+    {
+        "codigo": "001",
+        "nombre": "Cedula"
+    },
+    {
+        "codigo": "002",
+        "nombre": "Tarjeta de identidad"
+    },
+    {
+        "codigo": "003",
+        "nombre": "Registro civil"
+    },
+    {
+        "codigo": "004",
+        "nombre": "Cedula extrangera"
+    }
+]
