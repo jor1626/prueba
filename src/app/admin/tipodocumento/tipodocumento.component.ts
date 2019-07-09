@@ -30,7 +30,6 @@ export class TipodocumentoComponent {
         switch (event.tipo) {
             case 1: // * Nuevo
                 this.c_accion_form = event.tipo;
-                this.c_id_table = event.data;
                 break;
             case 2: // * Editar
                 this.c_accion_form = event.tipo;
@@ -47,11 +46,12 @@ export class TipodocumentoComponent {
     event_form_tipo_documento(event): void {
         switch (event.tipo) {
             case 1: // * Cerró
+            $('#modal-tipo-documento').modal('close')
                 break;
             case 2: // * Guardó
                 this.c_accion_form = event.tipo;
                 this.c_id_table = event.data;
-                this.c_cambio_table++;
+                // this.c_cambio_table++;
                 break;
             case 3: // * Editó
                 this.c_cambio_table++;

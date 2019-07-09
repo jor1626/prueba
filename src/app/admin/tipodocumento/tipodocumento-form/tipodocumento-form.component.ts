@@ -49,7 +49,7 @@ export class TipodocumentoFormComponent {
     }
 
     cerrar() {
-        $('#modal-tipo-documento').modal('close')
+        // $('#modal-tipo-documento').modal('close')
         this.close.emit({ tipo: 1 });
     }
 
